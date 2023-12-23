@@ -1,30 +1,30 @@
 {
-  "name": "e2e",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "e2e/src",
-  "targets": {
-    "e2e": {
-      "executor": "@nx/cypress:cypress",
-      "options": {
-        "cypressConfig": "e2e/cypress.config.ts",
-        "testingType": "e2e",
-        "devServerTarget": "npx-cv-ssr:serve:development"
-      },
-      "configurations": {
-        "production": {
-          "devServerTarget": "npx-cv-ssr:serve:production"
+    "name": "e2e",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "projectType": "application",
+    "sourceRoot": "e2e/src",
+    "targets": {
+        "e2e": {
+            "executor": "@nx/cypress:cypress",
+            "options": {
+                "cypressConfig": "e2e/cypress.config.ts",
+                "testingType": "e2e",
+                "devServerTarget": "npx-cv-ssr:serve:development"
+            },
+            "configurations": {
+                "production": {
+                    "devServerTarget": "npx-cv-ssr:serve:production"
+                },
+                "ci": {
+                    "devServerTarget": "npx-cv-ssr:serve-static"
+                }
+            }
         },
-        "ci": {
-          "devServerTarget": "npx-cv-ssr:serve-static"
+        "lint": {
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
         }
-      }
     },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
-    }
-  },
-  "tags": [],
-  "implicitDependencies": ["npx-cv-ssr"]
+    "tags": [],
+    "implicitDependencies": ["npx-cv-ssr"]
 }
