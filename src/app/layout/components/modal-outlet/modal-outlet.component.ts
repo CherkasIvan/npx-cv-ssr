@@ -17,7 +17,7 @@ import { ILogoutButton } from '@app/layout/store/model/logout-button.interface';
 import { ModalHostComponent } from './modal-host.component';
 
 @Component({
-    selector: 'cv-modal-outlet',
+    selector: 'npx-cv-ssr-modal-outlet',
     templateUrl: './modal-outlet.component.html',
     styleUrls: ['./modal-outlet.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

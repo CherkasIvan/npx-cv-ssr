@@ -12,7 +12,7 @@ import { DialogService } from '@shared/services/dialog/dialog.service';
 import { DownloadButtonComponent } from '../download-button/download-button.component';
 
 @Component({
-    selector: 'cv-item',
+    selector: 'npx-cv-ssr-item',
     templateUrl: './cv-item.component.html',
     styleUrls: ['./cv-item.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,10 +1,10 @@
 @use '../../../../../assets/styles/mixins/flex.mixin' as *;
 
-.cv-item-container {
+.npx-cv-ssr-item-container {
     @include flex-a_center-j_sa;
     margin: 0 auto;
 
-    .cv-item {
+    .npx-cv-ssr-item {
         @include flex-a_center-d_column;
         gap: 20px;
 

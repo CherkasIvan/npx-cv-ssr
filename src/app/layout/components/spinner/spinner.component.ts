@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { SpinnerService } from '@core/services/spinner/spinner.service';
 
 @Component({
-    selector: 'cv-spinner',
+    selector: 'npx-cv-ssr-spinner',
     standalone: true,
     imports: [CommonModule],
     templateUrl: './spinner.component.html',

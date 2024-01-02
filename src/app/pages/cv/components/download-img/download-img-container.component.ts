@@ -9,7 +9,7 @@ import { DownloadButtonComponent } from '../download-button/download-button.comp
 import { CvItemComponent } from '../download-column/cv-item.component';
 
 @Component({
-    selector: 'cv-download-img-container',
+    selector: 'npx-cv-ssr-download-img-container',
     templateUrl: './download-img-container.component.html',
     styleUrls: ['./download-img-container.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

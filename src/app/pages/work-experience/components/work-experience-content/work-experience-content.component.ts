@@ -11,7 +11,7 @@ import { FirebaseService } from '@shared/services/firebase/firebase.service';
 import { WorkTimeLabelComponent } from '../work-time-label/work-time-label.component';
 
 @Component({
-    selector: 'cv-work-experience-content',
+    selector: 'npx-cv-ssr-work-experience-content',
     templateUrl: './work-experience-content.component.html',
     styleUrls: ['./work-experience-content.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

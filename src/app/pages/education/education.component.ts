@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { EducationContentComponent } from './components/education-content/education-content.component';
 
 @Component({
-    selector: 'cv-education',
+    selector: 'npx-cv-ssr-education',
     templateUrl: './education.component.html',
     styleUrls: ['./education.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,11 +1,11 @@
 @use '../../../../../assets/styles/mixins/flex.mixin' as *;
 
 .download-img {
-    .cv-container {
+    .npx-cv-ssr-container {
         @include flex-a_center-j_center;
         width: 100%;
 
-        .cv-item {
+        .npx-cv-ssr-item {
             max-width: 65%;
             @include flex-a_center-d_column;
             gap: 20px;

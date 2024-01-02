@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogService } from '@shared/services/dialog/dialog.service';
 
 @Component({
-    selector: 'cv-img-dialog',
+    selector: 'npx-cv-ssr-img-dialog',
     templateUrl: './img-dialog.component.html',
     styleUrls: ['./img-dialog.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

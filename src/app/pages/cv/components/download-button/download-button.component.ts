@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { DarkModeService } from '@core/services/dark-mode/dark-mode.service';
 
 @Component({
-    selector: 'cv-download-button',
+    selector: 'npx-cv-ssr-download-button',
     standalone: true,
     imports: [CommonModule],
     templateUrl: './download-button.component.html',

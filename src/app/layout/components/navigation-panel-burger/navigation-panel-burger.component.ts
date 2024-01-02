@@ -22,7 +22,7 @@ import { DarkModeSelectorComponent } from '../dark-mode-selector/dark-mode-selec
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 
 @Component({
-    selector: 'cv-navigation-panel-burger',
+    selector: 'npx-cv-ssr-navigation-panel-burger',
     templateUrl: './navigation-panel-burger.component.html',
     styleUrls: ['./navigation-panel-burger.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

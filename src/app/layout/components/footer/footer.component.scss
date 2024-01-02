@@ -1,7 +1,7 @@
 @use '../../../../assets/styles/mixins/flex.mixin' as *;
 @use '../../../../assets/styles/mixins/glassmorphism.mixin' as glass;
 
-.cv-footer {
+.npx-cv-ssr-footer {
     padding: 0 5%;
     @include glass.footer_glassmorphism;
 

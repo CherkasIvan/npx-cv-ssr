@@ -9,7 +9,7 @@ import { DialogService } from '@shared/services/dialog/dialog.service';
 import { FirebaseService } from '@shared/services/firebase/firebase.service';
 
 @Component({
-    selector: 'cv-education-content',
+    selector: 'npx-cv-ssr-education-content',
     templateUrl: './education-content.component.html',
     styleUrls: ['./education-content.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

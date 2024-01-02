@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CvItemComponent } from './cv-item.component';
+import { CvItemComponent } from './npx-cv-ssr-item.component';
 
 describe('CvItemComponent', () => {
     let component: CvItemComponent;

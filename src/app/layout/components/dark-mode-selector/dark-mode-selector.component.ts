@@ -10,7 +10,7 @@ import { IDarkMode } from '@layout/store/model/dark-mode.interface';
 import { localStorageService } from '@shared/services/localstorage/local-storage.service';
 
 @Component({
-    selector: 'cv-dark-mode-selector',
+    selector: 'npx-cv-ssr-dark-mode-selector',
     standalone: true,
     imports: [CommonModule],
     templateUrl: './dark-mode-selector.component.html',

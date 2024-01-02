@@ -2,7 +2,7 @@
     <div class="container">
         <img
             src="assets/img/IvanCherkas.png"
-            alt="cv-logo"
+            alt="npx-cv-ssr-logo"
             class="logo"
             routerLink="/layout"
         />
@@ -23,18 +23,20 @@
             </ul>
         </nav>
 
-        <cv-navigation-panel-burger
+        <npx-cv-ssr-navigation-panel-burger
             class="navigation-container--mobile"
             [burgerNavigators]="navigators"
-        ></cv-navigation-panel-burger>
+        ></npx-cv-ssr-navigation-panel-burger>
 
         <div class="personal-area">
             <div class="selectors">
-                <cv-language-selector></cv-language-selector>
-                <cv-dark-mode-selector></cv-dark-mode-selector>
+                <npx-cv-ssr-language-selector></npx-cv-ssr-language-selector>
+                <npx-cv-ssr-dark-mode-selector></npx-cv-ssr-dark-mode-selector>
             </div>
             <div class="logout">
-                <cv-logout-button buttonName="logout"></cv-logout-button>
+                <npx-cv-ssr-logout-button
+                    buttonName="logout"
+                ></npx-cv-ssr-logout-button>
             </div>
         </div>
     </div>

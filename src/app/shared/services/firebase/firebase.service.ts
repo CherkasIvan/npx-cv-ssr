@@ -33,14 +33,14 @@ export class FirebaseService {
     workExperienceCollection$!: Observable<IWorkExperience[]>;
     projectTechCollection$!: Observable<ITechnologies[]>;
     educarionCollection$!: Observable<IEducation[]>;
-    charts$!: Observable<any[]>;
+    charts$!: Observable<unknown[]>;
 
     constructor(
         private readonly _firestore: Firestore,
         private db: AngularFireDatabase,
     ) {}
 
-    getCharts(): Observable<any[]> {
+    getCharts(): Observable<unknown[]> {
         return (this.charts$ = this.db.list('horizontals_1').valueChanges());
     }
 

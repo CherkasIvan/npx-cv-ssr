@@ -9,17 +9,17 @@
                 <span class="front-end-skills__title">
                     {{ 'TECHNOLOGIES.HARD-SKILLS.FRONT-END' | translate }}
                 </span>
-                <cv-skills-content
+                <npx-cv-ssr-skills-content
                     [technologiesList]="frontendTech$ | async"
-                ></cv-skills-content>
+                ></npx-cv-ssr-skills-content>
             </div>
             <div class="back-end-skills"></div>
             <span class="back-end-skills__title">
                 {{ 'TECHNOLOGIES.HARD-SKILLS.BACK-END' | translate }}
             </span>
-            <cv-skills-content
+            <npx-cv-ssr-skills-content
                 [technologiesList]="backendTech$ | async"
-            ></cv-skills-content>
+            ></npx-cv-ssr-skills-content>
         </div>
 
         <div class="other-skills">
@@ -31,18 +31,18 @@
                 <span class="social-skills__title">
                     {{ 'TECHNOLOGIES.OTHER-SKILLS.SOCIAL' | translate }}
                 </span>
-                <cv-skills-content
+                <npx-cv-ssr-skills-content
                     [technologiesList]="socialTech$ | async"
-                ></cv-skills-content>
+                ></npx-cv-ssr-skills-content>
             </div>
 
             <div class="ui-skills">
                 <span class="ui-skills__title">
                     {{ 'TECHNOLOGIES.OTHER-SKILLS.UI' | translate }}
                 </span>
-                <cv-skills-content
+                <npx-cv-ssr-skills-content
                     [technologiesList]="otherTech$ | async"
-                ></cv-skills-content>
+                ></npx-cv-ssr-skills-content>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
-    selector: 'cv-project-stars',
+    selector: 'npx-cv-ssr-project-stars',
     templateUrl: './project-stars.component.html',
     styleUrls: ['./project-stars.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

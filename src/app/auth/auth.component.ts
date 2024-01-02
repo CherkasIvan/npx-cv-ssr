@@ -1,7 +1,15 @@
 import { NgClass, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { user } from '@angular/fire/auth';
-import { AbstractControl, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+    AbstractControl,
+    FormControl,
+    FormGroup,
+    FormsModule,
+    ReactiveFormsModule,
+    Validators,
+} from '@angular/forms';
+
 import { Store } from '@ngrx/store';
 
 import { IAuth } from './model/auth.interface';
@@ -10,7 +18,7 @@ import { authFailure, authSuccess } from './store/actions/auth.action';
 import { selectAuthState } from './store/selectors/auth.selector';
 
 @Component({
-    selector: 'cv-auth',
+    selector: 'npx-cv-ssr-auth',
     templateUrl: './auth.component.html',
     styleUrls: ['./auth.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

@@ -15,7 +15,7 @@ import { FirebaseService } from '@shared/services/firebase/firebase.service';
 import { pwaView } from '@utils/functions/pwaView';
 
 @Component({
-    selector: 'cv-footer',
+    selector: 'npx-cv-ssr-footer',
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.scss'],
     standalone: true,

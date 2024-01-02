@@ -4,7 +4,7 @@ import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'cv-work-time-label',
+    selector: 'npx-cv-ssr-work-time-label',
     templateUrl: './work-time-label.component.html',
     styleUrls: ['./work-time-label.component.scss'],
     standalone: true,

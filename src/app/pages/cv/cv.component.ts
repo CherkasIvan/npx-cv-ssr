@@ -9,7 +9,7 @@ import { FirebaseService } from '@shared/services/firebase/firebase.service';
 import { DownloadImgContainerComponent } from './components/download-img/download-img-container.component';
 
 @Component({
-    selector: 'cv-cv',
+    selector: 'npx-cv-ssr-cv',
     templateUrl: './cv.component.html',
     styleUrls: ['./cv.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

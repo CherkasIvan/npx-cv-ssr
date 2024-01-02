@@ -12,7 +12,7 @@ import { LogoutButtonComponent } from '../logout-button/logout-button.component'
 import { NavigationPanelBurgerComponent } from '../navigation-panel-burger/navigation-panel-burger.component';
 
 @Component({
-    selector: 'cv-navigation-panel',
+    selector: 'npx-cv-ssr-navigation-panel',
     templateUrl: './navigation-panel.component.html',
     styleUrls: ['./navigation-panel.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

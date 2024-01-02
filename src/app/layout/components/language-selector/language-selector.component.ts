@@ -15,7 +15,7 @@ import { localStorageService } from '@shared/services/localstorage/local-storage
 import { TranslateManagerService } from '@shared/services/translate/translate-manager.service';
 
 @Component({
-    selector: 'cv-language-selector',
+    selector: 'npx-cv-ssr-language-selector',
     standalone: true,
     imports: [CommonModule],
     templateUrl: './language-selector.component.html',

@@ -32,7 +32,7 @@ import { logoutButtonSelector } from './store/logout-button-store/logout-button.
 import { ILogoutButton } from './store/model/logout-button.interface';
 
 @Component({
-    selector: 'cv-layout',
+    selector: 'npx-cv-ssr-layout',
     templateUrl: './layout.component.html',
     styleUrls: ['./layout.component.scss'],
     animations: [routeAnimations],

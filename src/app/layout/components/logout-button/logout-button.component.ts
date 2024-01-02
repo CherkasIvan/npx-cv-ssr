@@ -12,7 +12,7 @@ import { ILogoutButton } from '@layout/store/model/logout-button.interface';
 import { ModalOutletComponent } from '../modal-outlet/modal-outlet.component';
 
 @Component({
-    selector: 'cv-logout-button',
+    selector: 'npx-cv-ssr-logout-button',
     standalone: true,
     imports: [CommonModule, ModalOutletComponent],
     templateUrl: './logout-button.component.html',

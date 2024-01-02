@@ -31,29 +31,29 @@
                     @if(workExp[idx].years > 0){
                     {{ workExp[idx].years }}
                     <div class="years">
-                        <cv-work-time-label
+                        <npx-cv-ssr-work-time-label
                             [dateNumber]="workExp[idx].years"
                             dateLabel="YEARS"
-                        ></cv-work-time-label>
+                        ></npx-cv-ssr-work-time-label>
                     </div>
                     } @if(workExp[idx].months > 0){
                     <div class="months">
                         {{ workExp[idx].months }}
                         <span class="single-work-time__months-label">
-                            <cv-work-time-label
+                            <npx-cv-ssr-work-time-label
                                 [dateNumber]="workExp[idx].months"
                                 dateLabel="MONTHS"
-                            ></cv-work-time-label>
+                            ></npx-cv-ssr-work-time-label>
                         </span>
                     </div>
                     } @if(workExp[idx].days > 0){
                     <div class="days">
                         {{ workExp[idx].days }}
 
-                        <cv-work-time-label
+                        <npx-cv-ssr-work-time-label
                             [dateNumber]="workExp[idx].days"
                             dateLabel="DAYS"
-                        ></cv-work-time-label>
+                        ></npx-cv-ssr-work-time-label>
                     </div>
                     }
                 </div>
@@ -64,27 +64,27 @@
             @if(totalWorkTime.years > 0){
             <div class="years">
                 {{ totalWorkTime.years }}
-                <cv-work-time-label
+                <npx-cv-ssr-work-time-label
                     [dateNumber]="totalWorkTime.years"
                     dateLabel="YEARS"
-                ></cv-work-time-label>
+                ></npx-cv-ssr-work-time-label>
             </div>
             } @if(totalWorkTime.months > 0){
             <div class="months">
                 {{ totalWorkTime.months }}
-                <cv-work-time-label
+                <npx-cv-ssr-work-time-label
                     [dateNumber]="totalWorkTime.months"
                     dateLabel="MONTHS"
-                ></cv-work-time-label>
+                ></npx-cv-ssr-work-time-label>
             </div>
             } @if(totalWorkTime.days > 0){
             <div class="days">
                 {{ totalWorkTime.days }}
                 <span class="total-work-time__days-label">
-                    <cv-work-time-label
+                    <npx-cv-ssr-work-time-label
                         [dateNumber]="totalWorkTime.days"
                         dateLabel="DAYS"
-                    ></cv-work-time-label>
+                    ></npx-cv-ssr-work-time-label>
                 </span>
             </div>
             }

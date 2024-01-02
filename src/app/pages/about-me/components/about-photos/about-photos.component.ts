@@ -6,7 +6,7 @@ import { IProfilePhoto } from '@shared/models/profile-photo.interface';
 import { FirebaseService } from '@shared/services/firebase/firebase.service';
 
 @Component({
-    selector: 'cv-about-photos',
+    selector: 'npx-cv-ssr-about-photos',
     templateUrl: './about-photos.component.html',
     styleUrls: ['./about-photos.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

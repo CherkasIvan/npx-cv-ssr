@@ -4,7 +4,7 @@ import { AboutContentComponent } from './components/about-content/about-content.
 import { AboutPhotosComponent } from './components/about-photos/about-photos.component';
 
 @Component({
-    selector: 'cv-about-page',
+    selector: 'npx-cv-ssr-about-page',
     templateUrl: './about-me.component.html',
     styleUrls: ['./about-me.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

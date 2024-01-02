@@ -8,7 +8,7 @@ import {
 import { ISnackbar } from '@shared/models/snackbar.interface';
 
 @Component({
-    selector: 'cv-snackbar',
+    selector: 'npx-cv-ssr-snackbar',
     standalone: true,
     imports: [CommonModule, MatSnackBarModule],
     templateUrl: './snackbar.component.html',

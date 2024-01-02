@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'cv-modal-host',
+    selector: 'npx-cv-ssr-modal-host',
     standalone: true,
     template: '<div class="modals-host"></div>',
 })

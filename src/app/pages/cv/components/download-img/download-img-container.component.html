@@ -1,20 +1,20 @@
 <div class="download-img">
-    <div class="cv-container">
-        <cv-item
+    <div class="npx-cv-ssr-container">
+        <npx-cv-ssr-item
             [language]="currentLanguage$ | async"
             [isEuroVersion]="isEuropean"
             cvItemNumber="1"
             translateLabel="{{ 'CV.PDF' | translate }}"
-        ></cv-item>
-        <cv-download-button
+        ></npx-cv-ssr-item>
+        <npx-cv-ssr-download-button
             (click)="changeCvVersions()"
             label="{{ 'CV.BUTTON-CSI-TEXT' | translate }} "
-        ></cv-download-button>
-        <cv-item
+        ></npx-cv-ssr-download-button>
+        <npx-cv-ssr-item
             [language]="currentLanguage$ | async"
             [isEuroVersion]="isEuropean"
             cvItemNumber="2"
             translateLabel="{{ 'CV.JPG' | translate }}"
-        ></cv-item>
+        ></npx-cv-ssr-item>
     </div>
 </div>

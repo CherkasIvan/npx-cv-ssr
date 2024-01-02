@@ -23,7 +23,7 @@ const OPTIONS_DEFAULT: ICarouselOptions = {
 };
 
 @Component({
-    selector: 'cv-carousel',
+    selector: 'npx-cv-ssr-carousel',
     templateUrl: './carousel.component.html',
     styleUrls: ['./carousel.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

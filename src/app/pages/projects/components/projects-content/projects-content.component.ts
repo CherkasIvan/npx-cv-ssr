@@ -12,7 +12,7 @@ import * as GithubReposSelectors from '../../projects-store/github.selectors';
 import { ProjectStarsComponent } from '../project-stars/project-stars.component';
 
 @Component({
-    selector: 'cv-projects-content',
+    selector: 'npx-cv-ssr-projects-content',
     templateUrl: './projects-content.component.html',
     styleUrls: ['./projects-content.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

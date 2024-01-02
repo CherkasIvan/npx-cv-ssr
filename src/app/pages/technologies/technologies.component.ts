@@ -10,7 +10,7 @@ import { FirebaseService } from '@shared/services/firebase/firebase.service';
 import { SkillsContentComponent } from '../../core/components/hard-skills-content/skills-content.component';
 
 @Component({
-    selector: 'cv-technologies',
+    selector: 'npx-cv-ssr-technologies',
     templateUrl: './technologies.component.html',
     styleUrls: ['./technologies.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,

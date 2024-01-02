@@ -4,7 +4,7 @@
         [@routeAnimations]="prepareRoute(outlet)"
     >
         @if(showLogoutModal$ | async) {
-        <cv-modal-outlet (modalClosed)="closeLogoutDialog()">
+        <npx-cv-ssr-modal-outlet (modalClosed)="closeLogoutDialog()">
             <div class="modal-content">
                 <p class="modal-message">
                     Are you shure that you wont to exit from app?
@@ -26,25 +26,27 @@
                     </button>
                 </div>
             </div>
-        </cv-modal-outlet>
+        </npx-cv-ssr-modal-outlet>
         }
 
-        <cv-navigation-panel
+        <npx-cv-ssr-navigation-panel
             [navigators]="navigation$ | async"
-        ></cv-navigation-panel>
+        ></npx-cv-ssr-navigation-panel>
 
-        <cv-spinner
+        <npx-cv-ssr-spinner
             [spinnerStyle]="(currentTheme$ | async) ? 'dark-layout' : 'layout'"
-        ></cv-spinner>
+        ></npx-cv-ssr-spinner>
 
         @if (currentRoute === '/layout') {
-        <cv-initial-content></cv-initial-content>
+        <npx-cv-ssr-initial-content></npx-cv-ssr-initial-content>
         }
 
         <router-outlet #outlet="outlet"></router-outlet>
 
-        <cv-footer></cv-footer>
+        <npx-cv-ssr-footer></npx-cv-ssr-footer>
     </div>
 
-    <cv-backgrounds [isDarkBackground]="currentTheme$ | async"></cv-backgrounds>
+    <npx-cv-ssr-backgrounds
+        [isDarkBackground]="currentTheme$ | async"
+    ></npx-cv-ssr-backgrounds>
 </div>

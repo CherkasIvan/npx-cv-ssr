@@ -1,17 +1,17 @@
-<div class="cv-item-container">
-    <div class="cv-item">
-        <cv-download-button
+<div class="npx-cv-ssr-item-container">
+    <div class="npx-cv-ssr-item">
+        <npx-cv-ssr-download-button
             [downloadPath]="downloadPath"
             [label]="translateLabel"
-        ></cv-download-button>
+        ></npx-cv-ssr-download-button>
         <button
-            class="cv-item__button"
+            class="npx-cv-ssr-item__button"
             (click)="openDialog(imgPath)"
         >
             <img
                 [src]="imgPath"
-                alt="cv-first-page"
-                class="cv-item__img"
+                alt="npx-cv-ssr-first-page"
+                class="npx-cv-ssr-item__img"
             />
         </button>
     </div>
