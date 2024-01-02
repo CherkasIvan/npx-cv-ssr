@@ -1,4 +1,4 @@
-import { IAuth } from './auth.interface';
+import { IAuth } from '../../model/auth.interface';
 
 export interface AuthState {
     user: IAuth | null;

@@ -24,7 +24,7 @@
         />
         @if (authForm.get('email')?.touched && !authForm.get('email')?.value) {
         <div class="invalid-feedback">
-            @if (f['email'].errors?.['required']) {
+            @if (f['email']?.errors['required']) {
             <div>E-mail is required</div>
             }
         </div>
@@ -47,7 +47,7 @@
         @if (authForm.get('password')?.touched &&
         !authForm.get('password')?.value) {
         <div class="invalid-feedback">
-            @if (f['password'].errors?.['required']) {
+            @if (f['password']?.errors['required']) {
             <div>Password is required</div>
             }
         </div>

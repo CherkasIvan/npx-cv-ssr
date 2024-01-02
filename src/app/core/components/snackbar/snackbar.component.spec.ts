@@ -6,11 +6,10 @@ describe('SnackbarComponent', () => {
     let component: SnackbarComponent;
     let fixture: ComponentFixture<SnackbarComponent>;
 
-    beforeEach(async () => {
-        await TestBed.configureTestingModule({
+    beforeEach(() => {
+        TestBed.configureTestingModule({
             imports: [SnackbarComponent],
-        }).compileComponents();
-
+        });
         fixture = TestBed.createComponent(SnackbarComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();

@@ -1,11 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+import {
+    MAT_SNACK_BAR_DATA,
+    MatSnackBarModule,
+} from '@angular/material/snack-bar';
+
+import { ISnackbar } from '@shared/models/snackbar.interface';
 
 @Component({
-    selector: 'npx-cv-ssr-snackbar',
+    selector: 'cv-snackbar',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, MatSnackBarModule],
     templateUrl: './snackbar.component.html',
-    styleUrl: './snackbar.component.scss',
+    styleUrls: ['./snackbar.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SnackbarComponent {}
+export class SnackbarComponent {
+    constructor(@Inject(MAT_SNACK_BAR_DATA) public data: ISnackbar) {}
+}

@@ -1,29 +1,21 @@
 import { NgClass, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { user } from '@angular/fire/auth';
-import {
-    AbstractControl,
-    FormControl,
-    FormGroup,
-    FormsModule,
-    ReactiveFormsModule,
-    Validators,
-} from '@angular/forms';
-
+import { AbstractControl, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 
-import { AuthService } from './service/auth.service';
+import { IAuth } from './model/auth.interface';
+import { AuthService } from './services/auth.service';
 import { authFailure, authSuccess } from './store/actions/auth.action';
-import { IAuth } from './store/model/auth.interface';
 import { selectAuthState } from './store/selectors/auth.selector';
 
 @Component({
-    selector: 'npx-cv-ssr-auth',
+    selector: 'cv-auth',
+    templateUrl: './auth.component.html',
+    styleUrls: ['./auth.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
     imports: [FormsModule, ReactiveFormsModule, NgClass, NgIf],
-    templateUrl: './auth.component.html',
-    styleUrl: './auth.component.scss',
 })
 export class AuthComponent implements OnInit {
     authForm!: FormGroup;
@@ -47,11 +39,9 @@ export class AuthComponent implements OnInit {
 
     onSubmit() {
         this.checkAuth();
-        this._store$
-            .select(selectAuthState)
-            .subscribe((auth: { user: IAuth | null }) => {
-                this.user = auth.user;
-            });
+        this._store$.select(selectAuthState).subscribe((auth) => {
+            this.user = auth.user;
+        });
     }
 
     checkAuth() {

@@ -1,15 +1,14 @@
+import { provideHttpClient } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
-import { provideClientHydration } from '@angular/platform-browser';
-import { provideAnimations } from '@angular/platform-browser/animations';
-import { provideRouter } from '@angular/router';
+import { TitleStrategy, provideRouter } from '@angular/router';
 
-import { appRoutes } from './app.routes';
+import { mainRoutes } from './app-routing.routes';
+import { CustomTitleStrategy } from './custom-title-strategy';
 
 export const appConfig: ApplicationConfig = {
     providers: [
-        provideClientHydration(),
-        provideClientHydration(),
-        provideRouter(appRoutes),
-        provideAnimations(),
+        provideRouter(mainRoutes),
+        provideHttpClient(),
+        { provide: TitleStrategy, useClass: CustomTitleStrategy },
     ],
 };
