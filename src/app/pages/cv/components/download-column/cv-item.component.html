@@ -1,0 +1,18 @@
+<div class="npx-cv-ssr-item-container">
+    <div class="npx-cv-ssr-item">
+        <npx-cv-ssr-download-button
+            [downloadPath]="downloadPath"
+            [label]="translateLabel"
+        ></npx-cv-ssr-download-button>
+        <button
+            class="npx-cv-ssr-item__button"
+            (click)="openDialog(imgPath)"
+        >
+            <img
+                [src]="imgPath"
+                alt="npx-cv-ssr-first-page"
+                class="npx-cv-ssr-item__img"
+            />
+        </button>
+    </div>
+</div>

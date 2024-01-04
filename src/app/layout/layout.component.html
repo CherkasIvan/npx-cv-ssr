@@ -1,1 +1,52 @@
-<p>layout works!</p>
+<div [ngClass]="(currentTheme$ | async) ? 'dark-layout' : 'layout'">
+    <div
+        class="layout-container"
+        [@routeAnimations]="prepareRoute(outlet)"
+    >
+        @if(showLogoutModal$ | async) {
+        <npx-cv-ssr-modal-outlet (modalClosed)="closeLogoutDialog()">
+            <div class="modal-content">
+                <p class="modal-message">
+                    Are you shure that you wont to exit from app?
+                </p>
+                <div class="modal-actions">
+                    <button
+                        class="cancel-button"
+                        type="button"
+                        (click)="closeLogoutDialog()"
+                    >
+                        Cancel
+                    </button>
+                    <button
+                        class="confirm-button"
+                        type="button"
+                        (click)="confirmLogout()"
+                    >
+                        Confirm
+                    </button>
+                </div>
+            </div>
+        </npx-cv-ssr-modal-outlet>
+        }
+
+        <npx-cv-ssr-navigation-panel
+            [navigators]="navigation$ | async"
+        ></npx-cv-ssr-navigation-panel>
+
+        <npx-cv-ssr-spinner
+            [spinnerStyle]="(currentTheme$ | async) ? 'dark-layout' : 'layout'"
+        ></npx-cv-ssr-spinner>
+
+        @if (currentRoute === '/layout') {
+        <npx-cv-ssr-initial-content></npx-cv-ssr-initial-content>
+        }
+
+        <router-outlet #outlet="outlet"></router-outlet>
+
+        <npx-cv-ssr-footer></npx-cv-ssr-footer>
+    </div>
+
+    <npx-cv-ssr-backgrounds
+        [isDarkBackground]="currentTheme$ | async"
+    ></npx-cv-ssr-backgrounds>
+</div>

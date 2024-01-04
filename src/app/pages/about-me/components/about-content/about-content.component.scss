@@ -1,0 +1,29 @@
+@use '../../../../../assets/styles/mixins/flex.mixin' as *;
+
+.about-content {
+    width: 100%;
+
+    .container {
+        @include flex-d_column;
+        gap: 20px;
+
+        .about-block,
+        .hobby-block,
+        .sports-block,
+        .army-block {
+            @include flex-d_column;
+
+            &__title {
+                align-self: center;
+                font-weight: 700;
+                font-size: 22px;
+            }
+
+            &__text {
+                margin-top: 15px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+}

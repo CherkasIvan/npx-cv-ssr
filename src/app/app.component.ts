@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
-  standalone: true,
-  imports: [RouterOutlet],
-  selector: 'npx-cv-ssr-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'npx-cv-ssr-root',
+    templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [RouterOutlet, RouterModule],
 })
-export class AppComponent {
-  title = 'npx-cv-ssr';
-}
+export class AppComponent {}

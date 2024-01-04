@@ -1,0 +1,20 @@
+<div class="download-img">
+    <div class="npx-cv-ssr-container">
+        <npx-cv-ssr-item
+            [language]="currentLanguage$ | async"
+            [isEuroVersion]="isEuropean"
+            cvItemNumber="1"
+            translateLabel="{{ 'CV.PDF' | translate }}"
+        ></npx-cv-ssr-item>
+        <npx-cv-ssr-download-button
+            (click)="changeCvVersions()"
+            label="{{ 'CV.BUTTON-CSI-TEXT' | translate }} "
+        ></npx-cv-ssr-download-button>
+        <npx-cv-ssr-item
+            [language]="currentLanguage$ | async"
+            [isEuroVersion]="isEuropean"
+            cvItemNumber="2"
+            translateLabel="{{ 'CV.JPG' | translate }}"
+        ></npx-cv-ssr-item>
+    </div>
+</div>
