@@ -24,7 +24,7 @@ export class DarkModeSelectorComponent {
         private _store$: Store<IDarkMode>,
     ) {}
 
-    public changeView($event: MouseEvent): void {
+    public changeView($event: Event): void {
         this._store$.dispatch(
             setModeSuccess((<HTMLInputElement>$event.target).checked),
         );

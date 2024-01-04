@@ -29,5 +29,5 @@ import { NavigationPanelBurgerComponent } from '../navigation-panel-burger/navig
     ],
 })
 export class NavigationPanelComponent {
-    @Input() public navigators: INavigation[] = [];
+    @Input() public navigators: INavigation[] | null = [];
 }
