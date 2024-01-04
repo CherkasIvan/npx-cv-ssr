@@ -18,7 +18,7 @@ import { FirebaseService } from '@shared/services/firebase/firebase.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LinksContainerComponent {
-    @Input() public modeTheme!: boolean;
+    @Input() public modeTheme!: boolean | null;
     @Input() public pwaView = false;
     public socialMediaLinks$: Observable<ISocialMedia[]> =
         this._firebaseService.getSocialMediaLinks();

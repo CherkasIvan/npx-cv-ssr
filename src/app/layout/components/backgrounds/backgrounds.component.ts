@@ -10,5 +10,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BackgroundsComponent {
-    @Input() public isDarkBackground!: boolean;
+    @Input() public isDarkBackground!: boolean | null;
 }

@@ -39,7 +39,7 @@ import { LanguageSelectorComponent } from '../language-selector/language-selecto
     ],
 })
 export class NavigationPanelBurgerComponent {
-    @Input() public burgerNavigators: INavigation[] = [];
+    @Input() public burgerNavigators: INavigation[] | null = [];
     @ViewChild('popup', { read: ElementRef })
     public popup!: ElementRef<PopUpCloseDirective>;
 

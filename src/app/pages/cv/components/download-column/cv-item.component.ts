@@ -21,10 +21,10 @@ import { DownloadButtonComponent } from '../download-button/download-button.comp
 })
 export class CvItemComponent implements OnChanges {
     public downloadPath = '';
-    @Input() public cvItemNumber!: number;
+    @Input() public cvItemNumber!: number | string;
     public imgPath = '';
     @Input() public translateLabel = '';
-    @Input() public language = '';
+    @Input() public language: string | null = '';
     @Input() public isEuroVersion = false;
 
     private readonly downloadPathCis = 'assets/img/cv/cis';
@@ -66,7 +66,7 @@ export class CvItemComponent implements OnChanges {
         if (this.language === 'ru') {
             const itemImgPathTail = this.imgPathPages.find(
                 (path) =>
-                    path.includes(this.language) &&
+                    path.includes(this.language!) &&
                     path.includes(this.cvItemNumber.toString()),
             );
             this.imgPath = itemImgPath + itemImgPathTail;
@@ -83,13 +83,13 @@ export class CvItemComponent implements OnChanges {
             if (this.cvItemNumber.toString() === '1') {
                 const itemDownloadPathTail = this.downloadPathTails.find(
                     (path) =>
-                        path.includes(this.language) && path.includes('.pdf'),
+                        path.includes(this.language!) && path.includes('.pdf'),
                 );
                 this.downloadPath = itemDownloadPath + itemDownloadPathTail;
             } else {
                 const itemDownloadPathTail = this.downloadPathTails.find(
                     (path) =>
-                        path.includes(this.language) && path.includes('.jpg'),
+                        path.includes(this.language!) && path.includes('.jpg'),
                 );
                 this.downloadPath = itemDownloadPath + itemDownloadPathTail;
             }
